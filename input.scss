@@ -19,15 +19,11 @@ body {
   line-height: 1.5;
   text-align: center;
   max-width: 1300px;
-  // font-size: 1.1rem;
-
   overflow-x: hidden;
 }
 
 img {
   display: block;
-  // width: 100%;
-  // max-width: 1300px;
   height: auto;
 }
 
@@ -71,6 +67,7 @@ header p {
   width: 100%;
   height: 100%;
 }
+
 .btn {
   position: relative;
   display: inline-block;
@@ -92,7 +89,11 @@ header p {
   color: #333;
 }
 
-/*Header*/
+// .card-btn {
+//   align-self: end;
+//   margin: 2em;
+// }
+
 
 // HEADER
 
@@ -150,7 +151,7 @@ header p {
   padding: 0em 1em 1em 0;
   margin: 0;
   color: #32444e;
-  background: #ffffff;
+  // background: #ffffff;
 }
 
 #section-b ul {
@@ -161,9 +162,9 @@ header p {
 
 #section-b li {
   margin-bottom: 1em;
-  background: #fff;
   color: #333;
 }
+
 
 #section-b li .card .card-title {
   color: #2f779b;
@@ -426,17 +427,22 @@ a.social-icon img {
     padding: 1em 0;
   }
 
-  #section-b ul {
-    grid-column: 2/8;
-  }
+//   #section-b .card {
+//     border: 1px #b7b7b7 solid;
+//     background:#ffffff;
+//  }
+ 
+#section-b ul {
+  display:flex;
+  // justify-content: space-around;
+}
 
-  #section-b ul {
-    display: flex;
-    justify-content: space-around;
-  }
-  #section-b li {
-    width: 31%;
-  }
+#section-b li {
+  width:31%;
+  background:#ffffff;
+  border: 1px #b7b7b7 solid;
+
+}
 
   #section-b h2 {
     color: #32444e;
@@ -453,32 +459,24 @@ a.social-icon img {
     font-size: 1em;
   }
 
-  li {
-    border: 1px #b7b7b7 solid;
-    display: flex;
-  }
 
-  .card-btn {
-    align-self: end;
-    margin: 2em;
-  }
 
   .card .card-title {
     margin: 0.5em;
-    align-self: start;
+    // align-self: start;
   }
 
   .card img {
     width: 150px;
     height: auto;
-    align-self: start;
+    // align-self: start;
     margin: 1.5em auto 0.5em auto;
   }
 
   .img-circle {
     border-radius: 50%;
     border: 1px #b7b7b7 solid;
-    align-self: start;
+    // align-self: start;
   }
 
   #section-b .card-content {
@@ -492,30 +490,24 @@ a.social-icon img {
 
   #section-b .scroll-container {
     display: flex;
-    align-items: center;
-
     --n: 1;
     width: 100%;
     width: calc(var(--n) * 95%);
-
-    overflow-y: hidden;
-    height: 120vw;
-    max-height: 210vh;
-
+    overflow-y: visible;
+    height:100vw;
+    // max-height: 210vh;
     // transform: translate(calc(var(--i, 0) / var(--n) * -100%));
     transform: translate(calc(var(--i, 0) / var(--n) * -100% + var(--tx, 0px)));
-
     transition: transform 0.5s ease-out;
   }
 
   #section-b .scroll-container li {
-    background: #ffffff !important;
+    // background: #ffffff !important;
     // min-width: 100%; /* needed so Firefox doesn't make img shrink to fit */
     width: 100%; /* can't take this out either as it breaks Chrome */
-    height: 100%;
+ 
     margin: 0.7em;
     // padding: 1em;
-    pointer-events: none;
   }
 
   .smooth {
@@ -541,6 +533,12 @@ a.social-icon img {
     margin: 0;
     font-size: 1.4em;
   }
+
+  #section-b .card-btn {
+    align-self: center;
+    margin: 2em;
+  }
+
 
   // SECTION C
 
@@ -682,14 +680,9 @@ a.social-icon img {
     padding: 1em 0.5em 1em 1em !important;
   }
 
-  #section-e #callout-1 {
+  #section-e #callout-1,   #section-e #callout-2 {
     margin: 0.75em 0.75em;
   }
-
-  #section-e #callout-2 {
-    margin: 0.75em 0.75em 0;
-  }
-
   #section-e h4 {
     color: #3b75a0;
     padding: 1em 0 0.5em 0;
@@ -722,6 +715,7 @@ a.social-icon img {
     margin: 1.5em auto;
     justify-self: end;
     align-self: end;
+ 
   }
 
   #callout-img-1 {
@@ -739,6 +733,10 @@ a.social-icon img {
   .callout p {
     padding: 0 1em;
   }
+  #section-e .card-btn {
+    margin:1em;
+  }
+
 }
 
 // *************************************************************
@@ -810,6 +808,7 @@ a.social-icon img {
   .grid {
     display: grid;
     grid-template-columns: 10% repeat(6, minmax(auto, 25em)) 10%;
+    // grid-template-rows: 1fr;
   }
 
   .grid-logos {
@@ -862,8 +861,8 @@ a.social-icon img {
   }
 
   .card-row-grid {
-    display: grid;
-    grid-template-rows: 190px auto auto;
+    display:grid;
+    grid-template-rows:  1fr repeat(1, minmax(auto, 18em)) 1fr;
   }
 
   .footer-grid {
@@ -938,7 +937,7 @@ a.social-icon img {
     padding: 1em 0 2em 0;
   }
 
-  .content-wrap {
+  #section-a .content-wrap {
     grid-column: 2/8;
     align-self: center;
   }
@@ -965,66 +964,85 @@ a.social-icon img {
 
   // SECTION B
 
-  #section-b ul {
-    grid-column: 2/8;
+  #section-b .content-title {
+   padding:1em 0 0.5em 0;
+
   }
 
+  #section-b .content-wrap {
+      grid-column: 2/8;
+      align-self: start;
+
+  }
+  #section-b .scroll-container {
+    --n: 0;
+    width: 100%;
+    // overflow-y: hidden;
+    height: 100%;
+    // transform: translate(calc(var(--i, 0) / var(--n) * -100%));
+    transform: none;
+    transition: 0 0 0 0;
+    margin:0 0 2em 0;
+  }
+
+  .smooth {
+    transition: none;
+  }
+
+  /////////////
+
   #section-b ul {
-    display: flex;
+    display:flex;
     justify-content: space-around;
   }
+
   #section-b li {
-    width: 31%;
-  }
-
-  #section-b h2 {
-    color: #32444e;
-    font-family: ff-dagny-web-pro, sans-serif;
-    font-weight: 700;
-    padding: 0em 0 1em 0;
-  }
-
-  #section-b h3 {
-    color: #2f779b;
-    font-family: ff-dagny-web-pro, sans-serif;
-    font-weight: 700;
-  }
-
-  li {
+    width:31%;
+    background:#ffffff;
     border: 1px #b7b7b7 solid;
-    display: flex;
+  
   }
 
-  .card-btn {
-    align-self: end;
+
+
+//   #section-b .card {
+//     border: 1px #b7b7b7 solid;
+//     background:#ffffff;
+
+
+
+//  }
+ 
+
+ #section-b .card-btn {
+    align-self: center;
     margin: 2em;
   }
 
-  .card .card-title {
-    margin: 0.5em;
-    align-self: start;
-  }
 
-  .card img {
+  #section-b .card img {
     width: 150px;
     height: auto;
-    align-self: start;
+    // align-self:start;
     margin: 1.5em auto 0.5em auto;
   }
 
   .img-circle {
     border-radius: 50%;
     border: 1px #b7b7b7 solid;
-    align-self: start;
   }
 
   #section-b .card-content {
-    padding: 0 2em 0 2em;
+    padding: 0 1em 0 1em;
+    // align-self: start;
   }
 
   #section-b .card-content p {
     padding: 0 1em;
+    margin:0;
   }
+
+
 
   #section-b h2 {
     color: #32444e;
@@ -1046,7 +1064,17 @@ a.social-icon img {
     font-size: 1.4em;
   }
 
+  // #section-b .card-btn {
+  //   align-self:end;
+  // }
+
   // SECTION C
+
+  #section-c .content-wrap {
+    grid-column: 2/8;
+    align-self: center;
+  }
+
 
   #badge {
     width: 130px;
@@ -1118,14 +1146,23 @@ a.social-icon img {
 
   // SECTION D
 
-  #section-d h2,
-  #section-d h3 {
+  #section-d h2 {
     color: #32444e;
     font-family: ff-dagny-web-pro, sans-serif;
     font-weight: 700;
-    line-height: 1.4em;
-    padding: 0.5em 0 1em 0;
-    margin: 0;
+    padding: 0em 0 0.25em 0;
+    font-size: 1.8em;
+  }
+
+  #section-d h3 {
+    color: #2f779b;
+    font-family: ff-dagny-web-pro, sans-serif;
+    font-weight: 700;
+    font-size: 1.4em;
+  }
+
+  #section-d p {
+    font-size: 1em;
   }
 
   // SECTION E
@@ -1135,7 +1172,7 @@ a.social-icon img {
     margin: 0 auto;
   }
 
-  #section-e h2 {
+  #section-e h2.content-title {
     color: #32444e;
     font-family: ff-dagny-web-pro, sans-serif;
     font-weight: 700;
@@ -1154,21 +1191,16 @@ a.social-icon img {
     margin: 0;
     font-size: 1.4em;
   }
+
   #section-e h4 {
     color: #3b75a0;
     padding: 1em 0 0.5em 0;
     margin: 0;
+    font-size:1.4em;
+
   }
 
-  #section-e.content-title:first-child {
-    padding: 0em;
-  }
 
-  #section-e .callout {
-    background: #ffffff;
-    padding: 2em 0 0 0;
-    border: 1px #b7b7b7 solid;
-  }
 
   #section-e .btn {
     position: relative;
@@ -1186,6 +1218,10 @@ a.social-icon img {
     margin: 1.5em auto;
     justify-self: end;
     align-self: end;
+   
+  }
+  #section-e .card-btn {
+    margin:1em;
   }
 
   #callout-img-1 {
@@ -1200,7 +1236,8 @@ a.social-icon img {
     margin: 0 auto;
   }
 
-  .callout p {
+  #callout-1 p, #callout-2 p {
     padding: 0 1em;
+    font-size:1em;
   }
 }

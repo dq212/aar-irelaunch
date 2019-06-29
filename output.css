@@ -76,7 +76,6 @@ header p {
   background: #eaeaea;
   color: #333; }
 
-/*Header*/
 #aarp-header {
   position: absolute;
   width: 100%;
@@ -120,8 +119,7 @@ header p {
 #section-b {
   padding: 0em 1em 1em 0;
   margin: 0;
-  color: #32444e;
-  background: #ffffff; }
+  color: #32444e; }
 
 #section-b ul {
   list-style: none;
@@ -130,7 +128,6 @@ header p {
 
 #section-b li {
   margin-bottom: 1em;
-  background: #fff;
   color: #333; }
 
 #section-b li .card .card-title {
@@ -339,14 +336,12 @@ a.social-icon img {
     padding: 1em 0; }
 
   #section-b ul {
-    grid-column: 2/8; }
-
-  #section-b ul {
-    display: flex;
-    justify-content: space-around; }
+    display: flex; }
 
   #section-b li {
-    width: 31%; }
+    width: 31%;
+    background: #ffffff;
+    border: 1px #b7b7b7 solid; }
 
   #section-b h2 {
     color: #32444e;
@@ -361,28 +356,17 @@ a.social-icon img {
     font-weight: 700;
     font-size: 1em; }
 
-  li {
-    border: 1px #b7b7b7 solid;
-    display: flex; }
-
-  .card-btn {
-    align-self: end;
-    margin: 2em; }
-
   .card .card-title {
-    margin: 0.5em;
-    align-self: start; }
+    margin: 0.5em; }
 
   .card img {
     width: 150px;
     height: auto;
-    align-self: start;
     margin: 1.5em auto 0.5em auto; }
 
   .img-circle {
     border-radius: 50%;
-    border: 1px #b7b7b7 solid;
-    align-self: start; }
+    border: 1px #b7b7b7 solid; }
 
   #section-b .card-content {
     padding: 0 2em 0 2em; }
@@ -393,23 +377,18 @@ a.social-icon img {
 
   #section-b .scroll-container {
     display: flex;
-    align-items: center;
     --n: 1;
     width: 100%;
     width: calc(var(--n) * 95%);
-    overflow-y: hidden;
-    height: 120vw;
-    max-height: 210vh;
+    overflow-y: visible;
+    height: 100vw;
     transform: translate(calc(var(--i, 0) / var(--n) * -100% + var(--tx, 0px)));
     transition: transform 0.5s ease-out; }
 
   #section-b .scroll-container li {
-    background: #ffffff !important;
     width: 100%;
     /* can't take this out either as it breaks Chrome */
-    height: 100%;
-    margin: 0.7em;
-    pointer-events: none; }
+    margin: 0.7em; }
 
   .smooth {
     transition: transform calc(var(--f, 1) * 0.5s) ease-out; }
@@ -431,6 +410,10 @@ a.social-icon img {
     padding: 0.5em 0 1em 0;
     margin: 0;
     font-size: 1.4em; }
+
+  #section-b .card-btn {
+    align-self: center;
+    margin: 2em; }
 
   #section-c {
     padding: 2em;
@@ -549,11 +532,8 @@ a.social-icon img {
     margin: 0 !important;
     padding: 1em 0.5em 1em 1em !important; }
 
-  #section-e #callout-1 {
+  #section-e #callout-1, #section-e #callout-2 {
     margin: 0.75em 0.75em; }
-
-  #section-e #callout-2 {
-    margin: 0.75em 0.75em 0; }
 
   #section-e h4 {
     color: #3b75a0;
@@ -596,7 +576,10 @@ a.social-icon img {
     margin: 0 auto; }
 
   .callout p {
-    padding: 0 1em; } }
+    padding: 0 1em; }
+
+  #section-e .card-btn {
+    margin: 1em; } }
 @media only screen and (min-width: 641px) {
   #showcase .content-wrap {
     padding: 100px 0 0 0;
@@ -686,7 +669,7 @@ a.social-icon img {
 
   .card-row-grid {
     display: grid;
-    grid-template-rows: 190px auto auto; }
+    grid-template-rows: 1fr repeat(1, minmax(auto, 18em)) 1fr; }
 
   .footer-grid {
     display: grid;
@@ -741,7 +724,7 @@ a.social-icon img {
   #section-a .content-text {
     padding: 1em 0 2em 0; }
 
-  .content-wrap {
+  #section-a .content-wrap {
     grid-column: 2/8;
     align-self: center; }
 
@@ -762,55 +745,52 @@ a.social-icon img {
     padding: 1em 0 1em 0;
     font-size: 1.8em; }
 
-  #section-b ul {
-    grid-column: 2/8; }
+  #section-b .content-title {
+    padding: 1em 0 0.5em 0; }
+
+  #section-b .content-wrap {
+    grid-column: 2/8;
+    align-self: start; }
+
+  #section-b .scroll-container {
+    --n: 0;
+    width: 100%;
+    height: 100%;
+    transform: none;
+    transition: 0 0 0 0;
+    margin: 0 0 2em 0; }
+
+  .smooth {
+    transition: none; }
 
   #section-b ul {
     display: flex;
     justify-content: space-around; }
 
   #section-b li {
-    width: 31%; }
+    width: 31%;
+    background: #ffffff;
+    border: 1px #b7b7b7 solid; }
 
-  #section-b h2 {
-    color: #32444e;
-    font-family: ff-dagny-web-pro, sans-serif;
-    font-weight: 700;
-    padding: 0em 0 1em 0; }
-
-  #section-b h3 {
-    color: #2f779b;
-    font-family: ff-dagny-web-pro, sans-serif;
-    font-weight: 700; }
-
-  li {
-    border: 1px #b7b7b7 solid;
-    display: flex; }
-
-  .card-btn {
-    align-self: end;
+  #section-b .card-btn {
+    align-self: center;
     margin: 2em; }
 
-  .card .card-title {
-    margin: 0.5em;
-    align-self: start; }
-
-  .card img {
+  #section-b .card img {
     width: 150px;
     height: auto;
-    align-self: start;
     margin: 1.5em auto 0.5em auto; }
 
   .img-circle {
     border-radius: 50%;
-    border: 1px #b7b7b7 solid;
-    align-self: start; }
+    border: 1px #b7b7b7 solid; }
 
   #section-b .card-content {
-    padding: 0 2em 0 2em; }
+    padding: 0 1em 0 1em; }
 
   #section-b .card-content p {
-    padding: 0 1em; }
+    padding: 0 1em;
+    margin: 0; }
 
   #section-b h2 {
     color: #32444e;
@@ -829,6 +809,10 @@ a.social-icon img {
     padding: 0.5em 0 1em 0;
     margin: 0;
     font-size: 1.4em; }
+
+  #section-c .content-wrap {
+    grid-column: 2/8;
+    align-self: center; }
 
   #badge {
     width: 130px;
@@ -888,20 +872,27 @@ a.social-icon img {
     margin: 0;
     font-size: 1.4em; }
 
-  #section-d h2,
-  #section-d h3 {
+  #section-d h2 {
     color: #32444e;
     font-family: ff-dagny-web-pro, sans-serif;
     font-weight: 700;
-    line-height: 1.4em;
-    padding: 0.5em 0 1em 0;
-    margin: 0; }
+    padding: 0em 0 0.25em 0;
+    font-size: 1.8em; }
+
+  #section-d h3 {
+    color: #2f779b;
+    font-family: ff-dagny-web-pro, sans-serif;
+    font-weight: 700;
+    font-size: 1.4em; }
+
+  #section-d p {
+    font-size: 1em; }
 
   #section-e a {
     display: inline-block;
     margin: 0 auto; }
 
-  #section-e h2 {
+  #section-e h2.content-title {
     color: #32444e;
     font-family: ff-dagny-web-pro, sans-serif;
     font-weight: 700;
@@ -922,15 +913,8 @@ a.social-icon img {
   #section-e h4 {
     color: #3b75a0;
     padding: 1em 0 0.5em 0;
-    margin: 0; }
-
-  #section-e.content-title:first-child {
-    padding: 0em; }
-
-  #section-e .callout {
-    background: #ffffff;
-    padding: 2em 0 0 0;
-    border: 1px #b7b7b7 solid; }
+    margin: 0;
+    font-size: 1.4em; }
 
   #section-e .btn {
     position: relative;
@@ -949,6 +933,9 @@ a.social-icon img {
     justify-self: end;
     align-self: end; }
 
+  #section-e .card-btn {
+    margin: 1em; }
+
   #callout-img-1 {
     width: 37px;
     height: 60px;
@@ -959,7 +946,8 @@ a.social-icon img {
     height: 60px;
     margin: 0 auto; }
 
-  .callout p {
-    padding: 0 1em; } }
+  #callout-1 p, #callout-2 p {
+    padding: 0 1em;
+    font-size: 1em; } }
 
 /*# sourceMappingURL=output.css.map */
