@@ -127,6 +127,7 @@ header p {
   padding: 0; }
 
 #section-b li {
+  margin: 0.5em !important;
   margin-bottom: 1em;
   color: #333; }
 
@@ -341,7 +342,8 @@ a.social-icon img {
   #section-b li {
     width: 31%;
     background: #ffffff;
-    border: 1px #b7b7b7 solid; }
+    border: 1px #b7b7b7 solid;
+    height: 100%; }
 
   #section-b h2 {
     color: #32444e;
@@ -357,7 +359,8 @@ a.social-icon img {
     font-size: 1em; }
 
   .card .card-title {
-    margin: 0.5em; }
+    margin: 0.5em;
+    align-self: start; }
 
   .card img {
     width: 150px;
@@ -379,11 +382,13 @@ a.social-icon img {
     display: flex;
     --n: 1;
     width: 100%;
-    width: calc(var(--n) * 95%);
+    width: calc(var(--n) * 96%);
     overflow-y: visible;
-    height: 100vw;
+    height: 40vh;
+    max-height: 160vh;
     transform: translate(calc(var(--i, 0) / var(--n) * -100% + var(--tx, 0px)));
-    transition: transform 0.5s ease-out; }
+    transition: transform 0.5s ease-out;
+    margin: 0 0 1em 0; }
 
   #section-b .scroll-container li {
     width: 100%;
@@ -654,7 +659,7 @@ a.social-icon img {
   .grid-two-column {
     display: grid;
     grid-template-columns: 1fr repeat(2, minmax(15em, 25em)) 1fr;
-    column-gap: 20px; }
+    column-gap: 15px; }
 
   .grid-callout {
     display: grid;

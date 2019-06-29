@@ -161,6 +161,7 @@ header p {
 }
 
 #section-b li {
+  margin:0.5em !important;
   margin-bottom: 1em;
   color: #333;
 }
@@ -441,6 +442,7 @@ a.social-icon img {
   width:31%;
   background:#ffffff;
   border: 1px #b7b7b7 solid;
+  height:100%;
 
 }
 
@@ -463,7 +465,7 @@ a.social-icon img {
 
   .card .card-title {
     margin: 0.5em;
-    // align-self: start;
+    align-self: start;
   }
 
   .card img {
@@ -492,13 +494,14 @@ a.social-icon img {
     display: flex;
     --n: 1;
     width: 100%;
-    width: calc(var(--n) * 95%);
+    width: calc(var(--n) * 96%);
     overflow-y: visible;
-    height:100vw;
-    // max-height: 210vh;
+    height:40vh;
+    max-height: 160vh;
     // transform: translate(calc(var(--i, 0) / var(--n) * -100%));
     transform: translate(calc(var(--i, 0) / var(--n) * -100% + var(--tx, 0px)));
     transition: transform 0.5s ease-out;
+    margin:0 0 1em 0;
   }
 
   #section-b .scroll-container li {
@@ -844,7 +847,7 @@ a.social-icon img {
   .grid-two-column {
     display: grid;
     grid-template-columns: 1fr repeat(2, minmax(15em, 25em)) 1fr;
-    column-gap: 20px;
+    column-gap: 15px;
   }
 
   .grid-callout {
