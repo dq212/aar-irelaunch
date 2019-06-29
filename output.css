@@ -336,6 +336,9 @@ a.social-icon img {
     font-size: 0.8em;
     padding: 1em 0; }
 
+  #section-b .card {
+    height: 100%; }
+
   #section-b ul {
     display: flex; }
 
@@ -360,7 +363,8 @@ a.social-icon img {
 
   .card .card-title {
     margin: 0.5em;
-    align-self: start; }
+    align-self: start;
+    -ms-grid-row-align: start; }
 
   .card img {
     width: 150px;
@@ -383,8 +387,8 @@ a.social-icon img {
     --n: 1;
     width: 100%;
     width: calc(var(--n) * 96%);
-    overflow-y: visible;
-    height: 40vh;
+    overflow-y: hidden;
+    height: 80vh;
     max-height: 160vh;
     transform: translate(calc(var(--i, 0) / var(--n) * -100% + var(--tx, 0px)));
     transition: transform 0.5s ease-out;
@@ -393,6 +397,7 @@ a.social-icon img {
   #section-b .scroll-container li {
     width: 100%;
     /* can't take this out either as it breaks Chrome */
+    height: 100%;
     margin: 0.7em; }
 
   .smooth {
@@ -418,6 +423,7 @@ a.social-icon img {
 
   #section-b .card-btn {
     align-self: center;
+    -ms-grid-row-align: center;
     margin: 2em; }
 
   #section-c {
@@ -494,6 +500,7 @@ a.social-icon img {
   #barker p {
     grid-column: 2/8;
     align-self: center;
+    -ms-grid-row-align: center;
     text-align: center;
     justify-content: center;
     font-size: 0.9em; }
@@ -568,7 +575,9 @@ a.social-icon img {
     font-size: 0.8em;
     margin: 1.5em auto;
     justify-self: end;
-    align-self: end; }
+    -ms-grid-column-align: end;
+    align-self: end;
+    -ms-grid-row-align: end; }
 
   #callout-img-1 {
     width: 37px;
@@ -589,9 +598,11 @@ a.social-icon img {
   #showcase .content-wrap {
     padding: 100px 0 0 0;
     margin: 0;
-    tet-align: left;
+    text-align: left;
     justify-self: start;
+    -ms-grid-column-align: start;
     align-self: center;
+    -ms-grid-row-align: center;
     grid-column: 2/8; }
 
   #showcase h1 {
@@ -614,7 +625,12 @@ a.social-icon img {
     max-width: 300px;
     font-size: 1em;
     line-height: 1em;
-    line-height: 1.2em; }
+    line-height: 1.2em;
+    grid-column: 2/8;
+    justify-self: start;
+    -ms-grid-column-align: start;
+    align-self: center;
+    -ms-grid-row-align: center; }
 
   #showcase .bg-img {
     position: absolute;
@@ -629,12 +645,14 @@ a.social-icon img {
 
   .grid {
     display: grid;
-    grid-template-columns: 10% repeat(6, minmax(auto, 25em)) 10%; }
+    grid-template-columns: 10% repeat(6, minmax(auto, 25em)) 10%;
+    -ms-grid-columns: 10% repeat(6, minmax(auto, 25em)) 10%; }
 
   .grid-logos {
     padding: 1.1em 0 1em 0;
     display: grid;
     grid-template-columns: 10% repeat(4, minmax(auto, 25em)) 10%;
+    -ms-grid-columns: 10% repeat(4, minmax(auto, 25em)) 10%;
     justify-content: center; }
 
   #logo-1 {
@@ -654,27 +672,32 @@ a.social-icon img {
 
   .grid-barker {
     display: grid;
-    grid-template-columns: 20% repeat(6, minmax(auto, 25em)) 10%; }
+    grid-template-columns: 20% repeat(6, minmax(auto, 25em)) 10%;
+    -ms-grid-columns: 20% repeat(6, minmax(auto, 25em)) 10%; }
 
   .grid-two-column {
     display: grid;
     grid-template-columns: 1fr repeat(2, minmax(15em, 25em)) 1fr;
+    -ms-grid-columns: 1fr repeat(2, minmax(15em, 25em)) 1fr;
     column-gap: 15px; }
 
   .grid-callout {
     display: grid;
     grid-template-rows: 1fr repeat(2, minmax(auto, auto)) 1fr;
+    -ms-grid-rows: 1fr repeat(2, minmax(auto, auto)) 1fr;
     justify-content: center;
     align-content: center; }
 
   .two-row-grid {
     display: grid;
     grid-template-rows: 30% 70%;
+    -ms-grid-rows: 30% 70%;
     grid-row-gap: 0; }
 
   .card-row-grid {
     display: grid;
-    grid-template-rows: 1fr repeat(1, minmax(auto, 18em)) 1fr; }
+    grid-template-rows: 1fr repeat(1, minmax(auto, 18em)) 1fr;
+    -ms-grid-rows: 1fr repeat(1, minmax(auto, 18em)) 1fr; }
 
   .footer-grid {
     display: grid;
@@ -731,7 +754,8 @@ a.social-icon img {
 
   #section-a .content-wrap {
     grid-column: 2/8;
-    align-self: center; }
+    align-self: center;
+    -ms-grid-row-align: center; }
 
   .poster {
     padding-bottom: 2em; }
@@ -755,7 +779,8 @@ a.social-icon img {
 
   #section-b .content-wrap {
     grid-column: 2/8;
-    align-self: start; }
+    align-self: start;
+    -ms-grid-row-align: start; }
 
   #section-b .scroll-container {
     --n: 0;
@@ -779,6 +804,7 @@ a.social-icon img {
 
   #section-b .card-btn {
     align-self: center;
+    -ms-grid-row-align: center;
     margin: 2em; }
 
   #section-b .card img {
@@ -817,7 +843,8 @@ a.social-icon img {
 
   #section-c .content-wrap {
     grid-column: 2/8;
-    align-self: center; }
+    align-self: center;
+    -ms-grid-row-align: center; }
 
   #badge {
     width: 130px;
@@ -835,7 +862,9 @@ a.social-icon img {
   #barker img {
     grid-column: 1;
     justify-self: end;
+    -ms-grid-column-align: end;
     align-self: center;
+    -ms-grid-row-align: center;
     display: block;
     margin: 0 auto;
     width: 45px;
@@ -844,6 +873,7 @@ a.social-icon img {
   #barker p {
     grid-column: 2/8;
     align-self: center;
+    -ms-grid-row-align: center;
     text-align: center;
     justify-content: center;
     font-size: 0.9em; }
@@ -936,7 +966,9 @@ a.social-icon img {
     font-size: 0.8em;
     margin: 1.5em auto;
     justify-self: end;
-    align-self: end; }
+    -ms-grid-column-align: end;
+    align-self: end;
+    -ms-grid-row-align: end; }
 
   #section-e .card-btn {
     margin: 1em; }
