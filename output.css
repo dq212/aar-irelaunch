@@ -382,17 +382,15 @@ a.social-icon img {
     font-size: 0.9em; }
 
   #section-b .scroll-container {
-    overflow: hidden;
-    display: flex;
-    align-items: center;
     --n: 1;
+    width: 100%;
     width: calc(var(--n) * 96%);
+    overflow-y: visible;
+    height: 40vh;
     overflow-y: hidden;
     height: 80vh;
     max-height: 160vh;
-    transform: translate(calc(var(--i, 0) / var(--n) * -100% + var(--tx, 0px)));
-    transition: transform 0.5s ease-out;
-    margin: 0 0 1em 0; }
+    transform: translate(calc(var(--i, 0) / var(--n) * -100% + var(--tx, 0px))); }
 
   #section-b .scroll-container li {
     width: 33.3%;
