@@ -157,7 +157,6 @@ header p {
 #section-b li {
   margin:0.5em !important;
   margin-bottom: 1em;
-  color: #333;
 }
 
 
@@ -483,9 +482,11 @@ a.social-icon img {
   }
 
   #section-b .scroll-container {
+    overflow: hidden;
     display: flex;
+    align-items: center;
     --n: 1;
-    width: 100%;
+    // width: 100%;
     width: calc(var(--n) * 96%);
     overflow-y: hidden;
     height:80vh;
@@ -498,9 +499,10 @@ a.social-icon img {
 
   #section-b .scroll-container li {
     // background: #ffffff !important;
-    // min-width: 100%; /* needed so Firefox doesn't make img shrink to fit */
-    width: 100%; /* can't take this out either as it breaks Chrome */
- height:100%; 
+    //  min-width: 100%; /* needed so Firefox doesn't make img shrink to fit */
+    width: 33.3%; /* can't take this out either as it breaks Chrome */
+    width: calc(var(--n) * 96%);
+    height:100%; 
     margin: 0.7em;
     // padding: 1em;
   }
