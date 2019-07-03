@@ -421,6 +421,9 @@ a.social-icon img {
     margin: 0;
     font-size: 1.4em; }
 
+  #section-c .grid-logos img {
+    margin: 0 auto; }
+
   #section-c {
     padding: 2em;
     color: #32444e;
