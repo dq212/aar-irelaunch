@@ -486,7 +486,7 @@ a.social-icon img {
     width: calc(var(--n) * 96%);
     overflow-y: visible;
     // overflow-y: hidden;
-    height: 60vh;
+    height: 50vh;
     max-height: 160vh;
     padding: 0 0 1em 0;
     // transform: translate(calc(var(--i, 0) / var(--n) * -100%));
@@ -498,7 +498,6 @@ a.social-icon img {
     // background: #ffffff !important;
     //  min-width: 100%; /* needed so Firefox doesn't make img shrink to fit */
     width: calc(var(--n) * 96%);
-    height: 100%;
     margin: 0.7em;
     background: #ffffff;
     border: 1px #b7b7b7 solid;
@@ -572,27 +571,6 @@ a.social-icon img {
   }
 
   #badge {
-    margin: 0 auto;
-  }
-
-  #logo-1 {
-    width: 145px;
-    height: auto;
-    grid-column: 2;
-    margin: 0 auto;
-  }
-
-  #logo-2 {
-    grid-column: 3;
-    width: 145px;
-    height: auto;
-    margin: 0 auto;
-  }
-
-  #logo-3 {
-    grid-column: 4;
-    width: 145px;
-    height: auto;
     margin: 0 auto;
   }
 
@@ -750,7 +728,7 @@ a.social-icon img {
 // *************************************************************
 // *************************************************************
 
-@media only screen and (min-width: 641px) {
+@media only screen and (min-width: 700px) {
   #showcase .content-wrap {
     padding: 100px 0 0 0;
     margin: 0;
@@ -823,16 +801,16 @@ a.social-icon img {
   .grid-logos {
     padding: 1.1em 0 1em 0;
     display: grid;
-    grid-template-columns: 10% repeat(4, minmax(auto, 25em)) 10%;
-    -ms-grid-columns: 10% repeat(4, minmax(auto, 25em)) 10%;
+    grid-template-columns: 1fr repeat(3, minmax(auto, 25em)) 1fr;
+    -ms-grid-columns: 1fr repeat(5, minmax(auto, 25em)) 1fr;
     justify-content: center;
   }
 
-  #logo-1 {
-    width: 145px;
-    height: auto;
-    grid-column: 2;
-  }
+  // #logo-1 {
+  //   grid-column: 2;
+  //   width: 145px;
+  //   height: auto;
+  // }
 
   #logo-2 {
     grid-column: 3;
@@ -1307,24 +1285,6 @@ a.social-icon img {
     height: 440px;
     z-index: -1;
     max-width: 1300px;
-  }
-
-  #logo-1 {
-    width: 145px;
-    height: auto;
-    grid-column: 2;
-  }
-
-  #logo-2 {
-    grid-column: 3;
-    width: 145px;
-    height: auto;
-  }
-
-  #logo-3 {
-    grid-column: 4;
-    width: 145px;
-    height: auto;
   }
 
   #showcase {
