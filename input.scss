@@ -175,7 +175,8 @@ header p {
 
 #section-b .card-btn {
   padding: 0;
-  margin: 2em 1em 0 1em;
+  margin: 2em auto 1em auto;
+  width: 70%;
 }
 
 /*Section C*/
@@ -486,12 +487,14 @@ a.social-icon img {
     width: calc(var(--n) * 96%);
     overflow-y: visible;
     // overflow-y: hidden;
-    height: 50vh;
-    max-height: 160vh;
+
+    // height: 60vh;
+    // max-height: 160vh;
     padding: 0 0 1em 0;
     // transform: translate(calc(var(--i, 0) / var(--n) * -100%));
     transform: translate(calc(var(--i, 0) / var(--n) * -100% + var(--tx, 0px)));
     transition: transform 0.5s ease-out;
+    height: 100%;
   }
 
   #section-b .scroll-container li {
@@ -855,6 +858,7 @@ a.social-icon img {
   .footer-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 
