@@ -950,7 +950,7 @@ header p {
   #main-footer li {
     border: 0;
     text-decoration: none;
-    font-size: 0.6em;
+    font-size: 0.8em;
     display: inline; }
 
   .footer-nav {
@@ -981,6 +981,9 @@ header p {
     font-family: ff-dagny-web-pro, sans-serif;
     font-weight: 700; }
 
+  .social-nav li:first-child {
+    margin-right: 1em; }
+
   a.social-icon img {
     width: 20px;
     height: auto;
@@ -990,7 +993,11 @@ header p {
   .icon {
     width: 100px;
     height: auto;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+
+  .social-nav li a.social-icon {
+    margin: 0.5em 0 0 1em;
+    justify-self: center; } }
 @media only screen and (min-width: 1024px) {
   #showcase .content-wrap {
     padding: 100px 0 0 0;
