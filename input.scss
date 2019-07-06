@@ -223,17 +223,24 @@ header p {
   color: #fff;
   min-height: 62px;
   padding: 1em;
+  font-size:0.7em;
+  font-weight: 700;
 }
+
+
 
 #main-footer li a {
   border: 0;
   text-decoration: none;
   color: #ffffff;
   border: none;
+
 }
 
 #main-footer ul {
   border: 0;
+  margin:0!important;
+  padding:1em 0 0 1em !important;
   list-style: none;
 }
 
@@ -245,68 +252,39 @@ header p {
 }
 .footer-nav li {
   border: 0;
-  margin: 0 0.2em;
+  margin:0;
+  text-align: left;
 }
 
 .social-nav {
   list-style: none;
   padding-top: 0;
   margin: 0;
-  padding: 0;
+  padding: 1em 0 0 0;
 }
 .social-nav li {
-  margin: 0 0.5em;
+  text-align: left;
+  padding:0.5em;
+  margin: 0;
+}
+
+.social-nav li:first-child {
+  text-align: left;
+  padding:0.8em 0.5em 0.5em 0!important;
+  margin: 0;
 }
 
 #main-footer li {
-  border: 0;
-  text-decoration: none;
-  font-size: 0.6em;
-  display: inline;
+  padding:0.3em;
 }
 
-.footer-nav {
-  padding: 0;
-  margin-left: 1.6em;
-  grid-column: 1/4;
-  -ms-grid-column: 1;
-  grid-row: 1;
-  -ms-grid-row: 1;
-  justify-self: start;
-  -ms-grid-column-align: start;
-  align-self: center;
-  -ms-grid-row-align: center;
-  font-family: ff-dagny-web-pro, sans-serif;
-  font-weight: 700;
+.social-nav img {
+  width:40px;
+  padding-bottom: 1em;
+  height:auto;
 }
 
-.social-nav {
-  padding: 0;
-  margin-right: 1.6em;
-  grid-column: 4/6;
-  -ms-grid-column: 4;
-  grid-row: 1;
-  -ms-grid-row: 1;
-  justify-self: end;
-  -ms-grid-column-align: end;
-  align-self: center;
-  -ms-grid-row-align: center;
-  font-family: ff-dagny-web-pro, sans-serif;
-  font-weight: 700;
-}
 
-a.social-icon img {
-  width: 20px;
-  height: auto;
-  display: inline;
-  vertical-align: middle;
-}
-
-.icon {
-  width: 100px;
-  height: auto;
-  margin: 0 auto;
-}
 
 // *************************************************************
 // *************************************************************
@@ -334,7 +312,7 @@ a.social-icon img {
   #showcase .bg-img {
     position: absolute;
     background: #333 url('./imgs/hero-mobile.jpg');
-    background-position: center 65px;
+    background-position: 30px 65px;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -354,12 +332,11 @@ a.social-icon img {
   #showcase h1 {
     font-family: ff-dagny-web-pro, sans-serif;
     font-weight: 700;
-    padding-top: 300px;
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
+    padding-top:280px;
+    margin: 0.5em 0 0 0.5em;
+    text-align: left;
     padding-left: 0;
-    font-size: 1.5em;
+    font-size: 1.8em;
     line-height: 1em;
   }
 
@@ -367,10 +344,10 @@ a.social-icon img {
     font-family: ff-dagny-web-pro, sans-serif;
     font-weight: 400;
     max-width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    padding: 1em 2em;
-    font-size: 0.8em;
+    margin: 0.5em 0 0 1em;
+    text-align: left;
+    // padding: 1em 2em;
+    // font-size: 0.8em;
     line-height: 1em;
   }
 
@@ -575,6 +552,10 @@ a.social-icon img {
   #section-c p {
     font-size: 0.8em;
     padding: 1em 0;
+  }
+
+  #section-c p.employer-email {
+    padding:0 0 2em 0;
   }
 
   #badge {
@@ -1045,6 +1026,7 @@ a.social-icon img {
 
   // SECTION C
 
+  
   #section-c .content-wrap {
     grid-column: 2/8;
     align-self: center;
@@ -1091,6 +1073,8 @@ a.social-icon img {
   #section-c p {
     font-size: 1.1em;
   }
+
+  
 
   #section-c .content-title:first-child {
     margin: 0;
@@ -1220,6 +1204,57 @@ a.social-icon img {
   #callout-2 p {
     padding: 0 1em;
     font-size: 1em;
+  }
+
+
+  #main-footer li {
+    border: 0;
+    text-decoration: none;
+    font-size: 0.6em;
+    display: inline;
+  }
+  
+  .footer-nav {
+    padding: 0;
+    margin-left: 1.6em;
+    grid-column: 1/4;
+    -ms-grid-column: 1;
+    grid-row: 1;
+    -ms-grid-row: 1;
+    justify-self: start;
+    -ms-grid-column-align: start;
+    align-self: center;
+    -ms-grid-row-align: center;
+    font-family: ff-dagny-web-pro, sans-serif;
+    font-weight: 700;
+  }
+  
+  .social-nav {
+    padding: 0;
+    margin-right: 1.6em;
+    grid-column: 4/6;
+    -ms-grid-column: 4;
+    grid-row: 1;
+    -ms-grid-row: 1;
+    justify-self: end;
+    -ms-grid-column-align: end;
+    align-self: center;
+    -ms-grid-row-align: center;
+    font-family: ff-dagny-web-pro, sans-serif;
+    font-weight: 700;
+  }
+  
+  a.social-icon img {
+    width: 20px;
+    height: auto;
+    display: inline;
+    vertical-align: middle;
+  }
+  
+  .icon {
+    width: 100px;
+    height: auto;
+    margin: 0 auto;
   }
 }
 
