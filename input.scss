@@ -648,7 +648,7 @@ header p {
 
   #section-e .callout {
     background: #ffffff;
-    padding: 2em 0 0 0;
+    padding: 1em 0 0 0;
     border: 1px #b7b7b7 solid;
   }
 
@@ -823,7 +823,7 @@ header p {
 
   .grid-callout {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 60px 1fr;
     -ms-grid-rows: 1fr 1fr 1fr;
     justify-content: center;
     align-content: center;
