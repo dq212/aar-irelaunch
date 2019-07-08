@@ -101,17 +101,6 @@ header p {
   text-align: left;
   overflow: hidden; }
 
-#showcase .bg-img {
-  position: absolute;
-  background: #333 url("./imgs/hero-mobile.jpg");
-  background-position: center 60px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 440px;
-  z-index: -1;
-  max-width: 1300px; }
-
 /*Section A*/
 #section-a {
   background: #ffffff;
@@ -138,7 +127,7 @@ header p {
   color: #2f779b; }
 
 #section-b .card-content p {
-  padding: 0 1em;
+  padding: 0 0.5em;
   margin: 0; }
 
 #section-b .card-btn {
@@ -236,7 +225,7 @@ header p {
   #showcase .bg-img {
     position: absolute;
     background: #333 url("./imgs/hero-mobile.jpg");
-    background-position: 30px 65px;
+    background-position: -90px 65px;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -253,17 +242,18 @@ header p {
   #showcase h1 {
     font-family: ff-dagny-web-pro, sans-serif;
     font-weight: 700;
-    padding-top: 280px;
+    padding-top: 270px;
+    max-width: 80%;
     margin: 0.5em 0 0 0.5em;
     text-align: left;
     padding-left: 0;
-    font-size: 1.8em;
+    font-size: 1.6em;
     line-height: 1em; }
 
   #showcase .content-wrap p {
     font-family: ff-dagny-web-pro, sans-serif;
     font-weight: 400;
-    max-width: 80%;
+    max-width: 50%;
     margin: 0.5em 0 0 1em;
     text-align: left;
     line-height: 1em; }
@@ -294,7 +284,7 @@ header p {
     padding: 1em 0; }
 
   #combo-logos {
-    max-width: 95%;
+    max-width: 90%;
     margin: 0 auto;
     padding: 1em; }
 
@@ -353,7 +343,7 @@ header p {
     padding: 0 2em 0 2em; }
 
   #section-b .card-content p {
-    padding: 0 1em;
+    padding: 0 0.5em;
     font-size: 0.9em; }
 
   #section-b .scroll-container {
@@ -550,7 +540,7 @@ header p {
 
   #section-e .card-btn {
     margin: 1em; } }
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 641px) {
   #showcase .content-wrap {
     padding: 100px 0 0 0;
     margin: 0;
@@ -565,7 +555,7 @@ header p {
     font-family: ff-dagny-web-pro, sans-serif;
     font-weight: 700;
     padding-top: 0;
-    width: 90%;
+    width: 35%;
     text-align: left;
     padding-left: 0;
     font-size: 2.4em;
@@ -667,6 +657,7 @@ header p {
 
   #combo-logos {
     max-width: 590px;
+    width: 90%;
     margin: 0 auto;
     padding: 1em; }
 
