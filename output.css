@@ -332,6 +332,7 @@ header p {
 
   .card .card-title {
     margin: 0.5em;
+    -ms-flex-item-align: start;
     align-self: start;
     -ms-grid-row-align: start; }
 
@@ -356,6 +357,7 @@ header p {
     width: 100%;
     width: calc(var(--n) * 96%);
     overflow-y: hidden;
+    overflow-x: hidden;
     padding: 0 0 1em 0;
     transform: translate(calc(var(--i, 0) / var(--n) * -100% + var(--tx, 0px)));
     transition: transform 0.5s ease-out;
@@ -739,6 +741,7 @@ header p {
     --n: 0;
     width: 100%;
     overflow-y: hidden;
+    overflow-x: hidden;
     height: 100%;
     transform: none;
     transition: 0 0 0 0; }
@@ -1096,6 +1099,7 @@ header p {
     --n: 0;
     width: 100%;
     overflow-y: hidden;
+    overflow-x: hidden;
     height: 100%;
     transform: none;
     transition: 0 0 0 0; }
