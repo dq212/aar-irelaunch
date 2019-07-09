@@ -462,8 +462,8 @@ header p {
     --n: 1;
     width: 100%;
     width: calc(var(--n) * 96%);
-    overflow-y: visible;
-    // overflow-y: hidden;
+    // overflow-y: visible;
+    overflow-y: hidden;
 
     // height: 60vh;
     // max-height: 160vh;
@@ -955,7 +955,7 @@ header p {
   #section-b .scroll-container {
     --n: 0;
     width: 100%;
-    // overflow-y: hidden;
+    overflow-y: hidden;
     height: 100%;
     // transform: translate(calc(var(--i, 0) / var(--n) * -100%));
     transform: none;
@@ -1407,7 +1407,7 @@ header p {
   #section-b .scroll-container {
     --n: 0;
     width: 100%;
-    // overflow-y: hidden;
+    overflow-y: hidden;
     height: 100%;
     // transform: translate(calc(var(--i, 0) / var(--n) * -100%));
     transform: none;
