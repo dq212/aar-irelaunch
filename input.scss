@@ -126,7 +126,6 @@ header p {
   overflow: hidden;
 }
 
-
 /*Section A*/
 
 #section-a {
@@ -335,11 +334,8 @@ header p {
     max-width: 50%;
     margin: 0.5em 0 0 1em;
     text-align: left;
-    // padding: 1em 2em;
-    // font-size: 0.8em;
     line-height: 1em;
   }
-
   // SECTION A
 
   #section-a {
@@ -714,8 +710,11 @@ header p {
     text-align: left;
     justify-self: start;
     -ms-grid-column-align: start;
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
     -ms-grid-row-align: center;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 6;
     grid-column: 2/8;
   }
 
@@ -1215,7 +1214,7 @@ header p {
   .social-nav {
     padding: 0;
     margin-right: 1.6em;
-    grid-column: 4/6;
+    grid-column: 5/7;
     -ms-grid-column: 4;
     grid-row: 1;
     -ms-grid-row: 1;
@@ -1271,16 +1270,7 @@ header p {
 // *************************************************************
 
 @media only screen and (min-width: 1024px) {
-  #showcase .content-wrap {
-    padding: 100px 0 0 0;
-    margin: 0;
-    text-align: left;
-    justify-self: start;
-    -ms-grid-column-align: start;
-    align-self: center;
-    -ms-grid-row-align: center;
-    grid-column: 2/8;
-  }
+
 
   #showcase h1 {
     font-family: ff-dagny-web-pro, sans-serif;
@@ -1310,6 +1300,7 @@ header p {
     align-self: center;
     -ms-grid-row-align: center;
   }
+
   #showcase .bg-img {
     position: absolute;
     background: #333 url('./imgs/hero.jpg');
@@ -1462,4 +1453,5 @@ header p {
     margin: 0;
     font-size: 1.4em;
   }
+
 }
