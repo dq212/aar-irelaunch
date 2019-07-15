@@ -176,7 +176,7 @@ header p {
   color: #fff;
   min-height: 62px;
   padding: 1em;
-  font-size: 0.7em;
+  font-size: 0.8em;
   font-weight: 700; }
 
 #main-footer li a {
@@ -432,7 +432,7 @@ header p {
 
   #section-c p {
     font-size: 0.8em;
-    padding: 1em 0; }
+    padding: 0em 0; }
 
   #section-c p.employer-email {
     padding: 0 0 2em 0; }
@@ -792,7 +792,7 @@ header p {
     font-family: ff-dagny-web-pro, sans-serif;
     font-weight: 700;
     line-height: 1.4em;
-    padding: 0.75em 0 1em 0;
+    padding: 0.5em 0 1em 0;
     margin: 0;
     font-size: 1.4em; }
 
@@ -944,7 +944,7 @@ header p {
   #callout-1 p,
   #callout-2 p {
     padding: 0 1em;
-    font-size: 1em; }
+    font-size: 0.9em; }
 
   #main-footer li {
     border: 0;
@@ -955,7 +955,7 @@ header p {
   .footer-nav {
     padding: 0;
     margin-left: 1.6em;
-    grid-column: 1/4;
+    grid-column: 1/5;
     -ms-grid-column: 1;
     grid-row: 1;
     -ms-grid-row: 1;
@@ -984,7 +984,7 @@ header p {
     margin-right: 1em; }
 
   a.social-icon img {
-    width: 20px;
+    width: 36px;
     height: auto;
     display: inline;
     vertical-align: middle; }
@@ -1095,6 +1095,9 @@ header p {
 
   .smooth {
     transition: none; }
+
+  #section-b h3 {
+    padding: 1.4em 0 1em 0; }
 
   #section-c .content-wrap {
     grid-column: 2/8;
