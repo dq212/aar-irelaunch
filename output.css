@@ -336,9 +336,14 @@ header p {
     align-self: start;
     -ms-grid-row-align: start; }
 
-  .card img {
+  .card .img-holder {
+    display: inline-block;
     width: 250px;
-    height: 150px;
+    height: 150px; }
+
+  .card img {
+    width: 150px;
+    height: auto;
     margin: 1.5em auto 0.5em auto; }
 
   .img-circle {
