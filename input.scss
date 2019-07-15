@@ -425,13 +425,13 @@ header p {
   }
 
   .card img {
-    width: 150px;
-    height: auto;
+    width: 250px;
+    height: 150px;
     margin: 1.5em auto 0.5em auto;
   }
 
   .img-circle {
-    border-radius: 50%;
+    // border-radius: 50%;
     border: 1px #b7b7b7 solid;
   }
 
@@ -606,7 +606,7 @@ header p {
 
   #section-d p {
     font-size: 0.8em;
-    padding: 1em 0;
+    padding: 0 0 2.2em 0;
   }
 
   // SECTION E
@@ -819,8 +819,8 @@ header p {
 
   .two-row-grid {
     display: grid;
-    grid-template-rows: 30% 70%;
-    -ms-grid-rows: 30% 70%;
+    grid-template-rows: 25% 75%;
+    -ms-grid-rows: 25% 75%;
     grid-row-gap: 0;
   }
 
@@ -964,16 +964,6 @@ header p {
     border: 1px #b7b7b7 solid;
   }
 
-  #section-b .card img {
-    width: 150px;
-    height: auto;
-    margin: 1.5em auto 0.5em auto;
-  }
-
-  .img-circle {
-    border-radius: 50%;
-    border: 1px #b7b7b7 solid;
-  }
 
   #section-b .card-content {
     align-self: start;
@@ -1099,8 +1089,8 @@ header p {
     color: #32444e;
     font-family: ff-dagny-web-pro, sans-serif;
     font-weight: 700;
-    padding: 0em 0 0.25em 0;
-    font-size: 1.8em;
+    padding: 0.5em;
+    font-size: 1.6em;
   }
 
   #section-d h3 {
@@ -1112,6 +1102,7 @@ header p {
 
   #section-d p {
     font-size: 1em;
+    padding:0.5em;
   }
 
   // SECTION E
