@@ -19,7 +19,7 @@ body {
   font-weight: 400;
   background-color: #e6e6e6;
   color: #32444e;
-  font-size: 1.1em;
+  font-size: 1em;
   line-height: 1.5;
   text-align: center;
   max-width: 1300px;
@@ -192,7 +192,7 @@ header p {
   color: #32444e;
   background: #cfd7d7;
   text-align: left;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 #section-d .box:first-child {
@@ -607,7 +607,7 @@ header p {
     color: #32444e;
     background: #cfd7d7;
     text-align: left;
-    font-size: 1.1em;
+    font-size: 1em;
   }
 
   #section-d p {
@@ -785,19 +785,38 @@ header p {
   .grid-logos {
     padding: 1.1em 0 1em 0;
     display: grid;
-    grid-template-columns: 1fr repeat(3, minmax(auto, 25em)) 1fr;
-    -ms-grid-columns: 1fr repeat(5, minmax(auto, 25em)) 1fr;
+    grid-template-columns: 1fr repeat(4, minmax(auto, 25em)) 1fr;
+    -ms-grid-columns: 1fr repeat(3, minmax(auto, 25em)) 1fr;
     justify-content: center;
   }
 
-  #logo-2 {
+  .logo-block {
+    margin: 0 1em 1.5em 1em;
+  }
+
+  #logo-link-1 {
     grid-column: 3;
+  }
+
+  #logo-link-1 a,
+  #logo-link-2 a {
+    font-size: 10px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  #logo-link-2 {
+    grid-column: 4;
+  }
+
+  #logo-2 {
+    // grid-column: 3;
     width: 145px;
     height: auto;
   }
 
   #logo-3 {
-    grid-column: 4;
+    // grid-column: 4;
     width: 145px;
     height: auto;
   }
@@ -1051,7 +1070,7 @@ header p {
   }
 
   #section-c p {
-    font-size: 1.1em;
+    font-size: 1em;
   }
 
   #section-c .content-title:first-child {
@@ -1227,7 +1246,7 @@ header p {
   }
 
   a.social-icon img {
-    width: 36px;
+    width: 22px;
     height: auto;
     display: inline;
     vertical-align: middle;
