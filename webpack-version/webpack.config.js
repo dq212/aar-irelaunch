@@ -7,7 +7,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: 'production',
-  entry: './src/js/index.js',
+  entry: './src/js/main.js',
   output: {
     path: path.resolve(__dirname + '/dist'),
     filename:'bundle.js'
@@ -23,8 +23,8 @@ module.exports = {
       test: /\.scss$/,
       use: [
           {loader:'style-loader'},
-          {loader: 'css-loader'},
-          {loader: 'sass-loader'}
+          {loader: 'css-loader?sourceMap'},
+          {loader: 'sass-loader?sourceMap'}
         ]
       },
 
@@ -34,25 +34,25 @@ module.exports = {
       exclude: /node_modules/,
       options:{
         name: '[path][name].[ext]',
-       outputPath: 'imgs/'
+       outputPath: ''
       }
     },
 
-    {
-      test: /\.(woff|woff2|eot|ttf|svg)$/,
-      loader:'url-loader?limit=10000',
-      options: {
-             name: '[path][name].[ext]',
-             outputPath: 'fonts/',
-            }
-    },
-    {
-      test: /\.(woff|woff2|eot|ttf|svg)$/,
-      loader: 'file-loader',
-      options: {
-             name: '[path][name].[ext]',
-            }
-    },
+    // {
+    //   test: /\.(woff|woff2|eot|ttf|svg)$/,
+    //   loader:'url-loader?limit=10000',
+    //   options: {
+    //          name: '[path][name].[ext]',
+    //          outputPath: 'fonts/',
+    //         }
+    // },
+    // {
+    //   test: /\.(woff|woff2|eot|ttf|svg)$/,
+    //   loader: 'file-loader',
+    //   options: {
+    //          name: '[path][name].[ext]',
+    //         }
+    // },
     {
       test:/\.js$/, loader: 'babel-loader',
       exclude: /node_modules/,
@@ -74,8 +74,8 @@ module.exports = {
    // Copy the images folder and optimize all the images
    new CopyWebpackPlugin([{
      exclude: /node_modules/,
-     from: './src/images/',
-     from: './src/fonts/'
+     from: './src/imgs/',
+    //  from: './src/fonts/'
      
    }]),
    new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i })
