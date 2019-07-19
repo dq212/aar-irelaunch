@@ -517,7 +517,7 @@ header p {
     background: #ffffff;
     padding: 1em 0 0 0;
     border: 1px #b7b7b7 solid; }
-
+/* 
   #section-e .btn {
     position: relative;
     display: inline-block;
@@ -535,7 +535,7 @@ header p {
     justify-self: end;
     -ms-grid-column-align: end;
     align-self: end;
-    -ms-grid-row-align: end; }
+    -ms-grid-row-align: end; } */
 
   #callout-img-1 {
     width: 37px;
@@ -551,7 +551,12 @@ header p {
     padding: 0 1em; }
 
   #section-e .card-btn {
-    margin: 1em; } }
+    margin: 1em; }
+  
+ .btn:hover {
+      background: #eaeaea;
+      color: #333; }
+    }
 @media only screen and (min-width: 641px) {
   #showcase .content-wrap {
     padding: 100px 0 0 0;
@@ -565,6 +570,9 @@ header p {
     -ms-grid-column: 2;
     -ms-grid-column-span: 6;
     grid-column: 2/8; }
+
+
+
 
   #showcase h1 {
     font-family: ff-dagny-web-pro, sans-serif;
@@ -941,6 +949,12 @@ header p {
     -ms-grid-column-align: end;
     align-self: end;
     -ms-grid-row-align: end; }
+
+    #section-e .card-btn .btn:hover {
+      background: #eaeaea;
+      color: #333;
+    }
+
     #section-e .btn .logo-btn {
       position: relative;
       display: inline-block;
